@@ -44,7 +44,7 @@ export const Formulario = () => {
             htmlFor="Email"
             className="block text-gray-700 font-bold uppercase"
           >
-           Email
+            Email
           </label>
 
           <input
@@ -54,6 +54,42 @@ export const Formulario = () => {
             className="border-2 w-full p-2 mt-3 placeholder-gray-400 rounded-md"
           />
         </div>
+
+        <div className="mt-5">
+          <label
+            htmlFor="alta"
+            className="block text-gray-700 font-bold uppercase"
+          >
+            Alta
+          </label>
+
+          <input
+            id="alta"
+            type="date"
+            className="border-2 w-full p-2 mt-3 placeholder-gray-400 rounded-md"
+          />
+        </div>
+
+        <div className="mt-5">
+          <label
+            htmlFor="sintomas"
+            className="block text-gray-700 font-bold uppercase"
+          >
+            Sintomas
+          </label>
+
+          <textarea
+            id="sintomas"
+            className="border-2 w-full p-2 mt-3 placeholder-gray-400 rounded-md"
+            placeholder="Describe los sintomas"
+          />
+        </div>
+
+        <input
+          type="submit"
+          className="bg-indigo-600 w-full p-3 text-white uppercase font-bold mt-5 hover:bg-indigo-700 cursor-pointer transition-colors"
+          value="AGREGAR PACIENTE"
+        />
       </form>
     </div>
   );
